@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-deployment
+  labels:
+    app: node-deploy
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: test-app
+  template:
+    metadata:
+      name: node-pod
+      labels:
+         app: test-app
+    spec:
+     containers:
+      - name: node-container
+        image: rajat16/eks-demo:node-code
+        ports:
+         - containerPort: 8080
