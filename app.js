@@ -4,7 +4,7 @@ var app = express()
 
 //Define request response in root URL (/)
 app.get('/', function (req, res) {
-  res.send('Hello jhhdchcdshhcdsc running on docker')
+  res.send('Hello this code is updated through jenkins job for kubernetes')
 })
 
 //Launch listening server on port 8080
