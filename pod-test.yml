@@ -7,6 +7,6 @@ metadata:
 spec:
   containers:
   - name: node-container
-    image: rajat16/eks-demo:node-code
+    image: 900143203254.dkr.ecr.ap-south-1.amazonaws.com/eks-images:node-c36e7eca
     ports:
     - containerPort: 8080
