@@ -4,7 +4,7 @@ var app = express()
 
 //Define request response in root URL (/)
 app.get('/', function (req, res) {
-  res.send('Final Job running on kubernetes cluster')
+  res.send('Final Job running on kubjenkins cluster testing is done using hit and webhookr')
 })
 
 //Launch listening server on port 8080
