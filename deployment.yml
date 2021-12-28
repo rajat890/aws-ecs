@@ -5,7 +5,7 @@ metadata:
   labels:
     app: node-deploy
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: test-app
@@ -18,5 +18,6 @@ spec:
      containers:
       - name: node-container
         image: 900143203254.dkr.ecr.ap-south-1.amazonaws.com/eks-images:node-c36e7eca
+        imagePullPolicy: Always
         ports:
          - containerPort: 8080
